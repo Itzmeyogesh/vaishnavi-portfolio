@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative min-h-[90vh] py-8 px-4 sm:px-8 lg:px-14 text-white flex items-center justify-center overflow-hidden"
+      className="relative min-h-[45vh] py-8 px-4 sm:px-8 lg:px-14 text-white flex items-center justify-center overflow-hidden"
     >
       {/* Background gradients */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1f2937] via-[#0f172a] to-[#111827] opacity-90"></div>
