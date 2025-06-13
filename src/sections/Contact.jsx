@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center px-6 py-20 text-white"
+      className="min-h-screen flex items-center justify-center px-6 py-7 text-white"
     >
       <motion.div
         className="max-w-xl w-full bg-white/10 backdrop-blur-md p-10 rounded-2xl shadow-xl"

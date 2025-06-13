@@ -26,7 +26,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen py-16 px-4 flex flex-col items-center text-white">
+    <section id="skills" className="min-h-screen py-6 px-4 flex flex-col items-center text-white">
       <h2 className="text-3xl font-semibold mb-12">Skills</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-5xl">
