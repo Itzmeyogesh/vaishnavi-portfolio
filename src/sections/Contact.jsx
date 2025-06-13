@@ -10,8 +10,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'your_service_id',       // 🔁 Replace with your actual EmailJS service ID
-        'your_template_id',      // 🔁 Replace with your actual template ID
+        'your_service_id',       // 🔁 Replace with actual EmailJS service ID
+        'your_template_id',      // 🔁 Replace with actual template ID
         form.current,
         'your_public_key'        // 🔁 Replace with your public API key
       )
@@ -28,16 +28,22 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center px-6 py-7 text-white"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-14 py-16 text-white overflow-hidden"
     >
+      {/* 🌈 Animated Background Layers */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1f2937] via-[#0f172a] to-[#111827] opacity-90"></div>
+      <div className="absolute inset-0 -z-10 bg-[conic-gradient(at_top_left,_#0ea5e9,_#9333ea,_#f472b6,_#0ea5e9)] mix-blend-overlay blur-3xl opacity-30 animate-spin-slow"></div>
+
       <motion.div
-        className="max-w-xl w-full bg-white/10 backdrop-blur-md p-10 rounded-2xl shadow-xl"
+        className="max-w-xl w-full bg-white/10 backdrop-blur-lg px-8 py-10 sm:p-12 rounded-3xl shadow-2xl border border-white/10"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold text-cyan-400 mb-8 text-center">Contact Me</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold text-cyan-400 mb-8 text-center">
+          Contact Me
+        </h2>
 
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
           <input
@@ -63,7 +69,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 rounded-lg transition"
+            className="mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-lg transition duration-300"
           >
             Send Message
           </button>
