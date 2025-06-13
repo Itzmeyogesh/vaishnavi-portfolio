@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <motion.section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-8 lg:px-12 py-8 sm:py-12 text-center text-white overflow-hidden bg-transparent"
+      className="relative min-h-[45vh] flex items-center justify-center px-4 sm:px-8 lg:px-12 py-8 sm:py-12 text-center text-white overflow-hidden bg-transparent"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
